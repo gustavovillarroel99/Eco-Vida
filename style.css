@@ -23,14 +23,19 @@ body{
       color: var(--verde-escuro);
 }
 
-header{
-     display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      background-color: var(--verde-escuro);
-
+header {
+  background-color: #2E7D32; /* Verde escuro */
+  width: 100%;              /* ocupa toda a largura */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  flex-wrap: wrap;
+  box-sizing: border-box;   /* evita corte nas bordas */
 }
+
+
+
 .logo{
      color: var(--branco);
       font-size: 1.5em;
@@ -42,6 +47,7 @@ header{
     margin-top: 10px;
     width: 150px;
      padding: 10px;
+     height: auto;
 }
 
 #Principal{
@@ -72,11 +78,17 @@ section{
   margin-bottom: 40px;
      
 }
+
+nav {
+  display: flex;
+  gap: 15px; /* espaço entre os links */
+}
+
   nav a {
-      color: var(--branco);
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
+       color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
     }
 
       nav a:hover {
@@ -150,7 +162,24 @@ header img.logo {
   height: auto;
   cursor: pointer; /* mostra a “mãozinha” ao passar o mouse */
 }
-    
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* empilha logo e menu */
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column; /* coloca os links um abaixo do outro */
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header img.logo {
+    margin-bottom: 10px; /* espaço entre logo e links */
+  }
+}
 
 
 
