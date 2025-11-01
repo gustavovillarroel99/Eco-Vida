@@ -23,6 +23,15 @@ header {
   flex-wrap: wrap;
 }
 
+header h1{
+    flex: 1;                /* ocupa o espaço entre logo e menu */
+  text-align: center;     /* centraliza o texto */
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+    font-size: 10rem;
+}
+
 /* LOGO */
 .logo img {
   width: 120px;
