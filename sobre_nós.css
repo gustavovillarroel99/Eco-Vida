@@ -193,6 +193,24 @@ header img.logo {
     margin-bottom: 10px; /* espaço entre logo e links */
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Imagens nunca passam da largura da tela */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Centraliza e limita o conteúdo */
+section, #Produtos, #sobre {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 
 
