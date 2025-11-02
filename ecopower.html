@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecopower - Produtos Sustentáveis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="power.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="./images/image.png" alt="Ecopower Logo">
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="menu.html">Produtos</a>
+        <a href="sobre_nos.html">Sobre Nós</a>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ecopower</h1>
+      <p>Energia sustentável, potente e elegante para transformar seu dia a dia.</p>
+      <a href="#produtos" class="btn-primary">Confira nossos produtos</a>
+    </div>
+    <div class="hero-image">
+      <img src="./images/Power.png" alt="Ecopower">
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="products-section">
+    <h2>Nossos Ecopowers</h2>
+    <div class="products-container">
+
+      <div class="product-card">
+        <img src="./images/ecopower1.png" alt="Alta Eficiência">
+        <h3>Alta Eficiência</h3>
+        <p>Energia máxima com mínimo consumo. Economize e preserve o planeta.</p>
+        <button>Ver Mais</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/ecopower2.png" alt="Energia Limpa">
+        <h3>Energia Limpa</h3>
+        <p>Sustentável, ecológico e amigo do meio ambiente.</p>
+        <button>Ver Mais</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/ecopower3.png" alt="Durabilidade">
+        <h3>Durabilidade</h3>
+        <p>Projetado para durar anos, com manutenção mínima.</p>
+        <button>Ver Mais</button>
+      </div>
+
+      <div class="product-card">
+        <img src="./images/ecopower4.png" alt="Design Moderno">
+        <h3>Design Moderno</h3>
+        <p>Compacto, elegante e perfeito para qualquer ambiente.</p>
+        <button>Ver Mais</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ecopower — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Menu Mobile Script -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const nav = document.querySelector('header nav');
+    mobileMenu.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
